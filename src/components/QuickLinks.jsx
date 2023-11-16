@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./QuickLinks.css"
+import linkIcon from "../assets/go.png"
 
 function QuickLinks() {
     const [jsonData, setJsonData] = useState([])
@@ -34,7 +35,7 @@ function QuickLinks() {
                         className="QuickLinksButton"
                     >
                         {text}
-                        <img src="../../public/go.png" />
+                        <img src={linkIcon} />
                     </button>
                 ))}
             </div>

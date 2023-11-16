@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import settings from "../../public/settings.png"
+import settings from "../assets/settings.png"
 import "./Settings.css"
 
 function Settings() {

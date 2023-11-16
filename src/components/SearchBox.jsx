@@ -1,5 +1,5 @@
 import "./SearchBox.css"
-import searchLogo from "../../public/search.png"
+import searchLogo from "../assets/search.png"
 import { useEffect } from "react"
 
 function SearchBox() {
