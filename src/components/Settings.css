@@ -1,0 +1,57 @@
+.toggleButton {
+    background: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.settingsMenu {
+    position: absolute;
+    border: dashed grey 2px;
+    bottom: 5px;
+    margin: 5px;
+    z-index: -1;
+}
+
+.bgInput {
+    background: none;
+    padding: 0px 13px 0px 13px;
+    height: 25px;
+    margin: 5px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.bgButton {
+    background: none;
+    border: solid white 2px;
+    border-radius: 30px;
+    height: 45px;
+    width: 140px;
+    margin: 5px;
+}
+
+.jsonField {
+    background: none;
+    padding: 13px;
+    position: relative;
+    border-radius: 30px;
+    width: 400px;
+    margin: 5px;
+    height: 200px;
+    resize: none;
+}
+.jsonButton {
+    background: none;
+    border: solid white 2px;
+    position: relative;
+    bottom: 200px;
+    width: 140px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.rotate {
+    transition: transform 0.5s ease; /* Set the transition for the "transform" property */
+    transform: rotate(45deg); /* Set the initial rotation angle */
+}
