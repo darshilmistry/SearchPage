@@ -7,18 +7,21 @@
 
 .settingsMenu {
     position: absolute;
-    border: dashed grey 2px;
+    border: solid white 2px;
+    border-radius: 45px;
     bottom: 5px;
     margin: 5px;
+    padding: 10px;
     z-index: -1;
 }
 
 .bgInput {
     background: none;
     padding: 0px 13px 0px 13px;
-    height: 25px;
+    height: 45px;
     margin: 5px;
     width: 400px;
+    border: solid white 2px;
     border-radius: 30px;
 }
 
@@ -32,20 +35,21 @@
 }
 
 .jsonField {
+    height: 200px;
     background: none;
-    padding: 13px;
     position: relative;
+    border: solid white 2px;
     border-radius: 30px;
     width: 400px;
     margin: 5px;
-    height: 200px;
+    padding: 13px;
     resize: none;
 }
 .jsonButton {
     background: none;
     border: solid white 2px;
     position: relative;
-    bottom: 200px;
+    bottom: 208px;
     width: 140px;
     margin: 5px;
     border-radius: 30px;

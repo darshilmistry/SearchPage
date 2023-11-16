@@ -8,23 +8,37 @@ function Settings() {
     const [bgURL, setbgURL] = useState("")
 
     useEffect(() => {
-        setJsonData(
-            JSON.parse(
-                decodeURIComponent(
-                    document.cookie.replace(
-                        /(?:(?:^|.*;\s*)quickLinks\s*\=\s*([^;]*).*$)|^.*$/,
-                        "$1"
+        try {
+            setJsonData(
+                JSON.parse(
+                    decodeURIComponent(
+                        document.cookie.replace(
+                            /(?:(?:^|.*;\s*)quickLinks\s*\=\s*([^;]*).*$)|^.*$/,
+                            "$1"
+                        )
                     )
                 )
             )
-        )
+        } catch (error) {
+            console.log(
+                `There was an error. You can refresh the page to solve it. \n(error: ${error})`
+            )
+        }
 
-        const backgroundCookie = document.cookie
-            .split(";")
-            .find((cookie) => cookie.trim().startsWith("Background="))
+        try {
+            const backgroundCookie = document.cookie
+                .split(";")
+                .find((cookie) => cookie.trim().startsWith("Background="))
 
-        if (backgroundCookie) {
-            setbgURL(decodeURIComponent(backgroundCookie.split("=")[1].trim()))
+            if (backgroundCookie) {
+                setbgURL(
+                    decodeURIComponent(backgroundCookie.split("=")[1].trim())
+                )
+            }
+        } catch (error) {
+            console.log(
+                `There was an error. You can refresh the page to solve it. \n(error: ${error})`
+            )
         }
     }, [])
 
